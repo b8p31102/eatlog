@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="../js/bootstrap.min.js"></script>
+
+<title>料理の検索と記録</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <a href="ex01.html" class="navbar-brand px-5">レシピの記録</a>
+  <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu1"
+      aria-controls="navmenu1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end py-2 px-5" id="navmenu1">
+    <div class="navbar-nav">
+      
+      <a class="nav-item nav-link" href="ingredient.html">具材検索と記録</a>
+            <a class="nav-item nav-link" href="recipe.html">レシピ検索と記録</a>
+      <a class="nav-item nav-link" href="sort/nutrium_sort.html">栄養素別検索</a>
+      
+      <a class="nav-item nav-link" href="../view/nutrium_prev/index.html">特定日付の記録の表示</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<h1>レシピの記録</h1>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script src="form_submit_record.js">
+        </script>
+
+	
+<form action="recipe_record.php" method="POST" id="record">
+<ul>
+	<div id="debug"></div>
+</ul>
+		<input type="date" name="date">記録した日付を選択してください<br>
+<input type="submit" class="btn btn-primary" value="送信"></form>
+<div id="result"></div>
+</body>
+<form action="recipe_record_eiyouka.php" method="POST" id="reco">
+</form>
+
+</html>

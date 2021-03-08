@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="../js/bootstrap.min.js"></script>
+
+<title>料理の検索と記録</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <a href="ex01.html" class="navbar-brand px-5">レシピ検索</a>
+  <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu1"
+      aria-controls="navmenu1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end py-2 px-5" id="navmenu1">
+    <div class="navbar-nav">
+      
+      <a class="nav-item nav-link" href="ingredient.html">具材検索と記録</a>
+      
+      <a class="nav-item nav-link" href="sort/nutrium_sort.html">栄養素別検索</a>
+      <a class="nav-item nav-link" href="record.html">レシピの記録</a>
+      <a class="nav-item nav-link" href="../view/nutrium_prev/index.html">特定日付の記録の表示</a>
+      
+    </div>
+  </div>
+</nav>
+</header>
+
+<h1>食べたものを検索</h1>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script src="form_submit.js">
+        </script>
+
+	<form action="show_recipe_name.php" method="POST" id="search-r">
+			<label for="InputName">タイトル検索</label>
+			<input name="recipe_keyword" class="form-control" id="InputName" placeholder="カレー">
+		<button type="submit" class="btn btn-primary" name="search">検索</button>
+			<input type="reset" class = "btn btn-danger" value="リセット"><br />
+
+	</form>
+<hr>
+<form action="eiyouka_record.php" method="POST" id="record">
+<ul>
+	<div id="result"></div>
+</ul>
+	<!--<input type="text" name="quantity" placeholder="1">人分※数字のみ<br>-->
+	<input type="date" name="date">摂った日付<br>
+<button type="submit" class="btn btn-primary" name="submit">記録</button>
+</form>
+<div id="debug"></div>
+</div>
+<div class = "container"><a class="btn btn-info" href="../view/index.html">表示</a></div>
+</body>
+</html>

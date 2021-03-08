@@ -1,0 +1,97 @@
+﻿body{
+ margin:0;
+padding:0;
+ background:#EEEEEE;
+}
+
+header{
+ background:#000000;
+}
+
+h1{
+ color:#ffffff;
+}
+.header-container{
+ padding:30px 20px 10px 20px;
+}
+
+nav{
+ background:#000000;
+   position: fixed;
+}
+
+.nav-container{
+ padding:0 20px 0 20px;
+
+}
+
+nav ul{
+ display:flex;
+ list-style:none;
+ justify-content:space-between;
+ margin:0 ;
+ padding:20px 10px 0 10px;
+}
+
+nav li{
+ flex:1 0 auto;
+}
+nav li a{
+ display:block;
+ padding:10px 20px;
+ text-decoration:none;
+ text-align:center;
+ font-size:14px;
+ color:#ffffff;
+}
+
+nav li a:hover{
+ background:#34589e;
+ border-radius:10px 10px 0 0;
+}
+
+footer{}
+.footer-container{
+ padding:20px;
+ border-radius:0 0 10px 10px;
+ background:#000000;
+}
+
+p{
+ color:#000000;
+}
+div.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{}
+.footer-container{
+ padding:20px;
+ boder-radius:0 0 10px 10px;
+ background:#000000;
+}
+
+.box {
+  margin         : auto;
+  box-sizing     : border-box;
+  background     : #fff; 
+  border         : 1px solid #666;
+  width          : 750px;
+  max-height     : 3000px;
+  animation: boxAnime 10s linear infinite alternate;
+  display        : flex;
+  flex-wrap      : wrap;
+}
+.box div {
+  box-sizing     : border-box;           /* 罫線も含む長さ      */
+  background     : #B0C4DE;              /* BOXの背景色         */
+  border         : 2px solid #35557f;    /* 枠線の指定          */
+  width          : 300px;                 /* サンプルBOXの幅     */
+  height         : 530px;                 /* サンプルBOXの幅     */
+  margin         : 0px;                  /* サンプルBOXの間     */
+
+  /* ▼ FlexBoxの各ボックス均等自動幅 */
+  flex-grow      : 1;                    /* 各BOXを均等に割当て */
+}
