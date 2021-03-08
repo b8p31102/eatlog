@@ -1,0 +1,8 @@
+create table users (
+id uuid PRIMARY KEY,
+name varchar(11),
+password text NOT NULL,
+email text,
+sex varchar(1) NOT NULL,
+birthday integer DEFAULT '1999'
+);
