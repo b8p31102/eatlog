@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+
+<title>栄養素別、料理の検索と記録</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <a href="ex01.html" class="navbar-brand px-5">栄養素別検索</a>
+  <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu1"
+      aria-controls="navmenu1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end py-2 px-5" id="navmenu1">
+    <div class="navbar-nav">
+      
+<a class="nav-item nav-link" href="../recipe.html">レシピ検索</a>
+      <a class="nav-item nav-link" href="../ingredient.html">具材検索</a>
+      <a class="nav-item nav-link" href="../record.html">レシピの記録の表示</a>
+      <a class="nav-item nav-link" href="../../view/nutrium_prev/index.html">特定日付の記録の表示</a>    </div>
+  </div>
+</nav>
+</header>
+<h1>検索</h1>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script src="form_submit.js">
+        </script>
+
+	<form action="nutrium_calc.php" method="POST" id="search">
+			<label for="InputName">タイトル検索</label>
+			<input name="keyword" class="form-control" id="InputName" placeholder="カレー">
+			<select name="nutrium">
+				<option value="energy">エネルギー</option>
+				<option value="protein">タンパク質</option>
+				<option value="lipid">脂質</option>
+				<option value="monosat">一価不飽和脂肪酸</option>
+				<option value="polysat">多価飽和脂肪酸</option>
+				<option value="chol">コレステロール値</option>
+				<option value="carb">炭水化物</option>
+				<option value="fiber">食物繊維</option>
+				<option value="na">ナトリウム</option>
+				<option value="ka">カリウム</option>
+				<option value="ca">カルシウム</option>
+				<option value="mg">マグネシウム</option>
+				<option value="p">リン</option>
+				<option value="fe">鉄分</option>
+				<option value="zn">亜鉛</option>
+				<option value="cu">銅</option>
+				<option value="vit_a">ビタミンA</option>
+				<option value="vit_d">ビタミンD</option>
+				<option value="vit_k">ビタミンK</option>
+				<option value="vit_b1">ビタミンB1</option>
+				<option value="vit_b2">ビタミンB2</option>
+				<option value="nia">ナイアシン</option>
+				<option value="vit_b6">ビタミンB6</option>
+				<option value="vit_b12">ビタミンB12</option>
+				<option value="folic">葉酸</option>
+				<option value="pant">パントテン酸</option>
+				<option value="vit_c">ビタミンC</option>
+				<option value="en">塩分</option>
+			</select>
+		<button type="submit" class="btn btn-primary" name="search">検索</button>
+			<input type="reset" class = "btn btn-danger" value="リセット"><br />
+
+	</form>
+<hr>
+<form action="../eiyouka_record.php" method="POST" id="record">
+<ul>
+	<div id="result"></div>
+</ul>
+</form>
+<div id="debug"></div>
+</div>
+</body>
+</html>
