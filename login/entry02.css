@@ -1,0 +1,104 @@
+.frame{
+    width: 80%; 
+    margin: 30px auto; 
+    max-width: 600px; 
+}
+body {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background: url(yasai01.png)
+    center / cover;
+}
+img{
+    width: 80px; 
+    height: auto; 
+}
+
+.box0{
+    text-align: center;
+}
+
+.box1{
+    width: 100%; 
+    height: 60px; 
+    margin: 15px 0px; 
+    background-color: #eee; 
+    border-bottom: 2px solid #c2c2c2; 
+}
+
+
+#l_text1{
+    display: block; 
+    font-size: 14px; 
+    padding: 5px 10px; 
+}
+
+#text1{
+    font-size: 18px; 
+    padding: 0 0 7px 10px; 
+    width: 100%; 
+    background-color: #eee; 
+    border: none; 
+    outline: none; 
+    border-bottom: 2px solid #c2c2c2;
+    box-sizing: border-box; 
+}
+
+#text1:focus{
+    border-bottom: 2px solid #1B73BA; 
+}
+
+#l_text2{
+    display: block; 
+    font-size: 13px; 
+    padding: 5px 10px; 
+}
+
+#text2{
+    font-size: 18px;
+    padding: 2px 0 7px 10px; 
+    width: 100%; 
+    background-color: #eee; 
+    border: none; 
+    outline: none; 
+    border-bottom: 2px solid #c2c2c2; 
+    box-sizing: border-box; 
+}
+
+#text2:focus{
+    border-bottom: 2px solid #1B73BA; 
+}
+
+
+.btn1{
+    position: relative; 
+    width:100%; 
+    height:50px; 
+    top: 10px; 
+    color:#fff; 
+    border:none; 
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px; 
+    background:#1B73BA; 
+    display: block; 
+    -webkit-appearance: none;
+    outline: 0; 
+    cursor: pointer; 
+}
+.btn1:hover{
+    opacity: 0.8; 
+}
+
+
+a {
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
